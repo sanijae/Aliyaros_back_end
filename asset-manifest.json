@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/aliyaros_back_end/static/js/main.0f5d41b8.js",
-    "static/media/imgerror.png": "/aliyaros_back_end/static/media/imgerror.284ee4082ab6bfd372bd.png",
-    "static/media/imgLoading.png": "/aliyaros_back_end/static/media/imgLoading.4ab362e4ef0873352cce.png",
-    "index.html": "/aliyaros_back_end/index.html",
-    "main.0f5d41b8.js.map": "/aliyaros_back_end/static/js/main.0f5d41b8.js.map"
+    "main.js": "/static/js/main.b361d8e5.js",
+    "static/media/imgerror.png": "/static/media/imgerror.284ee4082ab6bfd372bd.png",
+    "static/media/imgLoading.png": "/static/media/imgLoading.4ab362e4ef0873352cce.png",
+    "index.html": "/index.html",
+    "main.b361d8e5.js.map": "/static/js/main.b361d8e5.js.map"
   },
   "entrypoints": [
-    "static/js/main.0f5d41b8.js"
+    "static/js/main.b361d8e5.js"
   ]
 }
