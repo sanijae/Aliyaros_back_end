@@ -9,7 +9,7 @@ export const GlobalStyled = createGlobalStyle`
 }
 `
 export const MainSection = styled.div`
-background: red; //rgba(0,0,0,.3);
+background: blue; //rgba(0,0,0,.3);
 width:100% ;
 display:flex ;
 flex-direction:column ;
