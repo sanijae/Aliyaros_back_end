@@ -14,8 +14,8 @@ export default function Appbar() {
     try {
        signOut(Auths).then(()=>{
         localStorage.removeItem('user')
-        window.location.reload()
         navigate('/')
+        //window.location.reload()
        })
        .catch(error=>alert(error.message))
     } catch (error) {

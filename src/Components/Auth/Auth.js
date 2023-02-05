@@ -17,8 +17,8 @@ export default function Auth() {
                  localStorage.setItem('user',user.accessToken)
                  //window.location.pathname ='/'
                  setUserData({email:'',password:''})
-                 window.location.reload()
                  navigate('/')
+                // window.location.reload()
                })
                .catch((error)=>{
                 alert('Forebase Error: ',error.message);

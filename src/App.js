@@ -26,7 +26,7 @@ function App() {
       <Appbar/>
       <Body>
         <Routes>
-          <Route path="/" exact element={user ? <Projects/>:<Auth/>} />
+          <Route path="/" exact index element={user ? <Projects/>:<Auth/>} />
           <Route path="/Projects" exact element={user ? <Projects/>:<Auth/>} />
           <Route path="/Proposals" exact element={user ? <Proposals/>: <Auth/>} />
           <Route path="/Topics" exact element={user ? <Topics/>: <Auth/>} />
