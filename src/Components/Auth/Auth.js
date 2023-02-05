@@ -15,8 +15,9 @@ export default function Auth() {
                .then((usercred)=>{
                  const user = usercred.user
                  localStorage.setItem('user',user.accessToken)
-                 window.location.pathname ='/'
+                 //window.location.pathname ='/'
                  setUserData({email:'',password:''})
+                 navigate('/')
                })
                .catch((error)=>{
                 alert('Forebase Error: ',error.message);
