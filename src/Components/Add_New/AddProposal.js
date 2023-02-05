@@ -3,11 +3,13 @@ import { Form, Button, Container, Input, Label, TextBox, Title } from './Styles'
 import { doc, setDoc } from 'firebase/firestore'
 import { db,storage } from '../../APIS/Firebaseconfig';
 import {ref, uploadBytes} from 'firebase/storage'
+import { useNavigate } from 'react-router-dom';
  
 export default function AddProposal() {
   const [data,setData] = useState({abstract:'',title:'',faculty:'',dept:'',numPage:'',file:''})
   const [message,setMessage] = useState('')
   const [error,setError] = useState('')
+  const navigate = useNavigate()
 
   const storageRef = ref(storage,`proposals/${data.title}`)
   async function uploadData(e){ 
@@ -22,6 +24,7 @@ export default function AddProposal() {
       }).then(async()=>{
         await uploadBytes(storageRef,data.file).catch((error)=>alert(error.message))
         window.location.reload()
+        navigate('/AddProposal')
         setData({abstract:'',title:'',dept:'',numPage:'',file:'',faculty:''})
         setMessage('Succesfully uploaded')        
       }).catch(error=>setError('error failed to upload file'))

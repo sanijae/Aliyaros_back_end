@@ -23,8 +23,8 @@ export default function AddProjects() {
         department:data.dept,pages:data.numPage,filename:data.file.name
       }).then(async()=>{
         await uploadBytes(storageRef,data.file).catch((error)=>alert(error.message))
-        window.location.reload()
         navigate('/')
+        window.location.reload()
         setData({abstract:'',title:'',dept:'',numPage:'',file:'',faculty:''})
         setMessage('Succesfully uploaded')        
       }).catch(error=>setError('error failed to upload file'))
