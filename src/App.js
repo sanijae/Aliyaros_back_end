@@ -27,20 +27,20 @@ function App() {
       <Body>
         <Routes>
           <Route path="/" exact index element={user ? <Projects/>:<Auth/>} />
-          <Route path="/Projects" exact element={user ? <Projects/>:<Auth/>} />
-          <Route path="/Proposals" exact element={user ? <Proposals/>: <Auth/>} />
-          <Route path="/Topics" exact element={user ? <Topics/>: <Auth/>} />
-          <Route path="/AddProjects" exact element={user ? <AddProjects/>: <Auth/>} />
-          <Route path="/AddProposal" exact element={user ? <AddProposal/>: <Auth/>} />
-          <Route path="/AddTopic" exact element={user ? <AddTopic/>: <Auth/>} />
-          <Route path="/Detail/:title" exact element={user ? <Details/>: <Auth/>} />
-          <Route path="/ProjectDetail/:title" exact element={user ? <ProjectsDetail/>: <Auth/>} />
-          <Route path="/ProposalDetail/:title" exact element={user ? <ProposalDetails/>: <Auth/>} />
-          <Route path="/TopicDetail/:title" exact element={user ? <TopicsDetails/>: <Auth/>} />
-          <Route path="/AddUser" exact element={user ? <AddUser/>: <Auth/>} />
-          <Route path="/ResetPassword" exact element={<ResetPassword />} />
-          <Route path="/NewPassword" exact element={<NewPassword />} />
-          <Route path="/Auth" exact element={<Auth/>} />
+          <Route path="/Projects" element={user ? <Projects/>:<Auth/>} />
+          <Route path="/Proposals" element={user ? <Proposals/>: <Auth/>} />
+          <Route path="/Topics" element={user ? <Topics/>: <Auth/>} />
+          <Route path="/AddProjects" element={user ? <AddProjects/>: <Auth/>} />
+          <Route path="/AddProposal" element={user ? <AddProposal/>: <Auth/>} />
+          <Route path="/AddTopic" element={user ? <AddTopic/>: <Auth/>} />
+          <Route path="/Detail/:title" element={user ? <Details/>: <Auth/>} />
+          <Route path="/ProjectDetail/:title" element={user ? <ProjectsDetail/>: <Auth/>} />
+          <Route path="/ProposalDetail/:title" element={user ? <ProposalDetails/>: <Auth/>} />
+          <Route path="/TopicDetail/:title" element={user ? <TopicsDetails/>: <Auth/>} />
+          <Route path="/AddUser" element={user ? <AddUser/>: <Auth/>} />
+          <Route path="/ResetPassword" element={<ResetPassword />} />
+          <Route path="/NewPassword" element={<NewPassword />} />
+          <Route path="/Auth" element={<Auth/>} />
         </Routes>
       </Body>
       <Footer/>

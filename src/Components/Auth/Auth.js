@@ -21,7 +21,7 @@ export default function Auth() {
                  navigate('/')
                })
                .catch((error)=>{
-                alert('Forebase Error: ',error.message);
+                alert(error.message);
                })        
       } catch (error) {
         console.log(error.message);
