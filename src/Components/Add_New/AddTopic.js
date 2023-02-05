@@ -23,7 +23,7 @@ export default function AddTopic() {
         department:data.dept,pages:data.numPage,filename:data.file.name
       }).then(async()=>{
         await uploadBytes(storageRef,data.file).catch((error)=>alert(error.message))
-        window.location.reload()
+        //window.location.reload()
         navigate('/AddTopic')
         setData({abstract:'',title:'',dept:'',numPage:'',file:'',faculty:''})
         setMessage('Succesfully uploaded')        
